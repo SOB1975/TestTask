@@ -1,7 +1,8 @@
 $black: #000;
 $white: #fff;
 @import 'mixin';
-@import 'fonts';
+// @import 'fonts';
+@include font-face("Poppins-Black", "Poppins-Black", 400);
 
 * {
   font-family: 'Poppins', sans-serif;
