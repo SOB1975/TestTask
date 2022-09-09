@@ -1,0 +1,27 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url('../fonts/#{$url}.woff2') format("woff2"),
+    url('../#{$url}.woff') format("woff");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
+}
+
+@mixin titleText($titleSize) {
+  font-size: $titleSize;
+  // color: $black;
+}
+
+@mixin graphText($graphSize) {
+  font-size: $graphSize;
+  line-height: 2;
+  // color: $light-color;
+}

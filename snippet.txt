@@ -1,0 +1,4 @@
+1. use - берет элементы из sprite.svg 
+2. clink - добавляет к ссылке class 
+3. imgc - добавляет к img class
+4. webp - вставляет тэг picture
