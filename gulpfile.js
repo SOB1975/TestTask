@@ -121,7 +121,7 @@ export const fonts = () => {
 }
 //fontsStyle
 const cb = () => {}
-let srcFonts = './src/scss/_fonts.scss';
+let srcFonts = './src/scss/base/_fonts.scss';
 let distFonts = './dist/fonts';
 
 export const fontsStyle = (done) => {
