@@ -2,8 +2,10 @@
 @import 'base/var';
 @import 'base/global';
 @import 'base/mixin';
-@include font-face("Poppins-Black", "Poppins-Black", 400);
+// @include font-face("Poppins-Black", "Poppins-Black", 400);
 @import 'base/fonts';
+@import 'components/card';
+@import 'components/sidebar';
 @import 'components/header';
 @import 'components/button';
 @import 'components/text';

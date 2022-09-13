@@ -1,0 +1,112 @@
+.cards-holder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 599px) {
+    flex-direction: column;
+  }
+}
+
+.cards-holder>.card-link {
+  margin-bottom: 3rem;
+}
+
+.card-link {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    opacity: .8;
+    transform: translateY(-.5rem);
+  }
+}
+
+.card {
+  position: relative;
+  width: 27rem;
+  background-color: $white;
+
+  &__badges {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    display: flex;
+  }
+
+  &__badges>*+* {
+    margin-left: 1rem;
+  }
+
+  &__badge {
+    display: inline-block;
+    border-radius: .4rem;
+    height: 2.2rem;
+    padding: 0 1rem;
+    font-size: 1.4em;
+    // текст по центру должно совпадать height
+    line-height: 2.3rem;
+    color: $black;
+  }
+
+  &__badge--class {
+    background-color: $bgyellow;
+  }
+
+  &__badge--credit {
+    background-color: $bgreen;
+  }
+
+  &__img {}
+
+  &__content {
+    padding: 1.6rem 1.5rem 2rem;
+    width: 27rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    font-weight: 700;
+    color: $black;
+    margin-bottom: 1.1rem;
+  }
+
+  &__term,
+  &__metro,
+  &__adress {
+    font-size: 1.4rem;
+    line-height: 1.142;
+    color: $black;
+  }
+
+  &__term,
+  &__metro {
+    margin-bottom: 1.1rem;
+  }
+
+  &__metro {
+    position: relative;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      margin-right: 1rem;
+      // position: absolute;
+      vertical-align: baseline;
+      width: 1.6rem;
+      height: 1.1rem;
+      background-image: url('./../img/svg/metro.svg');
+      background-repeat: no-repeat;
+      background-size: initial;
+    }
+  }
+
+  &__adress {
+    color: $cladress;
+  }
+}
+
+.card-link--hidden {
+  display: none;
+}
